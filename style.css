@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Poppins';font-size: 22px;
+}
+
+p{
+    font-size: 1rem; /* 16 px */
+    line-height: 1.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn {
+    padding: 1rem 1.5rem;
+    border: 1.5px solid rgb(177, 70, 70);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(177, 70, 70);
+    color: rgb(255, 255, 255);
+    border:none;
+}
+.btn:hover {
+    background-color: rgb(228, 166, 166);
+    color: black;
+}
+
+/*tittle*/
+.pre-title {
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    width: fit-content;
+    font-weight: 350;
+    font-size: 1rem;
+}
+
+/* logo dan navbar menu*/
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2s ease-in-out;
+    top: 0;
+    z-index: 50;
+    position: sticky;
+    background-color: white;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+
+}
+
+.logo {
+display: flex;
+align-items: center;
+font-weight: 700;
+font-size: 2rem;
+margin-left: 2rem;
+}
+
+.logo a {
+    color: rgb(182, 86, 86);
+} 
+
+nav ul li button {
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+nav ul li button:hover {
+    color: rgb(182, 86, 86);
+}
+
+/* Home Section */
+#home {
+    height: 500px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+
+.home-name {
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin: 0.5rem 0.1rem;
+    color: black;
+    margin-bottom: 1rem;
+} 
+
+.home-right img {
+    width: 400px;
+    border-radius: 0.7rem;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* About Section */
+#about{
+    background-color: rgb(228, 166, 166);
+    padding: 6rem 0;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+/* Layout */
+.grid-4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 3rem;
+}
+
+.about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: rgb(58, 28, 28);
+    border-radius: 0.7rem;
+ }
+
+ .about h3 {
+    color: white;
+    margin: 1rem 0;
+ }
+
+ .about p {
+    color: white;
+ }
+
+ .about-icon {
+    background-color: rgb(228, 166, 166);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+ }
+
+ /*-- End of About --*/
+
+ /*-- Skills & Experience --*/
+#skills {
+    padding: 6rem 0;
+    background: white;
+}
+
+.section-titles-skills {
+    text-align: center;
+    margin: 1rem 0 4rem;
+}
+
+.skills-grid {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 5rem;
+}
+.experience {
+    display: flex;
+}
+
+.experience .line {
+    padding: 0 0.9rem;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+.experience-title {
+    font-size: medium;
+}
+.experience-info {
+    margin: 0.3rem 0;
+}
+
+.experience-date {
+    margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position:  absolute;
+    left: -6px;
+} 
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* End of Experience & Skills */
+
+/* Contact Session */
+
+#contact {
+    padding: 6rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.3rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family:'Poppins';
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgb(139, 139, 139);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: rgb(138, 127, 127);
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: rgb(228, 166, 166);
+    color: black;
+}
+
+/* End of Contact */
+
+/* Footer */
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: rgb(228, 166, 166);
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+
+.footer-icons {
+    fill: gray;
+}
